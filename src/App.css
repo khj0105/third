@@ -1,0 +1,47 @@
+.body{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  width: 1920px;
+  height: 150px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.logo{
+  width: 220px;
+  height: 65px;
+  margin-left: 20px;
+}
+.logo img{
+  width: 220px;
+  height: 65px;
+}
+.nav{
+  width:630px;
+  height: 66px;
+  font-size: 24px;
+}
+
+.nav >ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.info_mn{
+  width: 220px;
+  height: 22px;
+  margin-right: 50px;
+  font-size: 16px;
+}
+
+.info_mn >ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
