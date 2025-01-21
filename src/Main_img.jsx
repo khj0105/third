@@ -16,7 +16,7 @@ function Main_image() {
           </div>
           <img
             className='main_img'
-            src='/images/main_img.png'
+            src= {process.env.PUBLIC_URL +'/images/main_img.png'}
             alt='first slide'
           />
         </div>
@@ -35,7 +35,7 @@ function Main_image() {
           </div>
           <img
             className='main_img'
-            src='/images/main_img1.png'
+            src={process.env.PUBLIC_URL +'/images/main_img1.png'}
             alt='first slide'
           />
         </div>
@@ -53,7 +53,7 @@ function Main_image() {
           </div>
           <img
             className='main_img'
-            src='/images/main_img2.png'
+            src={process.env.PUBLIC_URL +'/images/main_img2.png'}
             alt='first slide'
           />
         </div>

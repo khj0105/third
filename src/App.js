@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route,Link} from 'react-router-dom'
+import {Route,Link} from 'react-router-dom';
 import { Carousel } from 'react-bootstrap';
 import './App.css';
 import Store from './component/Store';
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className='body'>
       <header className='header'>
-        <h1 className='logo'><Link to = '/'><img src='/images/logo.png' alt=""/></Link></h1>
+        <h1 className='logo'><Link to = '/'><img src={process.env.PUBLIC_URL + '/images/logo.png'} alt=""/></Link></h1>
         <nav className='nav'>
           <ul>
             <li><Link to='/component/Store'>스토어</Link></li>

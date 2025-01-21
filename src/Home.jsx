@@ -1,7 +1,9 @@
 import React from "react";
 import Main_image from "./Main_img";
-import { Link } from 'react-router-dom';
 import './Home.css'
+import ProductList from "./Product";
+import Event from "./Event";
+import Content_box from "./Content_box";
 
 function Home(){
     return(
@@ -11,9 +13,9 @@ function Home(){
             </div>
             <div className='content'>
                 {/*  */}
-                <div className="content_box">
+                {/* <div className="content_box">
                 <div className="img_1">
-                        <img src="/images/nav_img.png"/>
+                        <img src={process.env.PUBLIC_URL +"/images/nav_img.png"}/>
                 </div>
 
                 <div className="best_product">
@@ -39,51 +41,53 @@ function Home(){
                         </div>
                         <ul className="img">
                             <li>
-                                <img src="/images/nav_img1.png"/>
+                                <img src={process.env.PUBLIC_URL +"/images/nav_img1.png"}/>
                                 <p>EOS R Series</p>
                             </li>
                             <li>
-                                <img src="/images/nav_img2.png"/>
+                                <img src={process.env.PUBLIC_URL +"/images/nav_img2.png"}/>
                                 <p>RF70-Series</p>
                             </li>
                         </ul>
                     </div> 
-                </div>
-            {/*  */}
-                <div className="product">
+                </div> */}<Content_box/>
+            {/*  */}<ProductList/>
+            <Event/>
+                 {/*<div className="product">
                     <h3>PRODUCT</h3>
                         <div className="product_list">
+                            
                             <ul>
                                 <li>
-                                    <img src='images/product_img1.png'/>
+                                    <img src={process.env.PUBLIC_URL +'/images/product_img1.png'}/>
                                     <h4>EOS R6 Mark 2</h4>
                                     <p>2,699,000원</p>
                                 </li>
                                 <li>
-                                    <img src='images/product_img2.png'/>
+                                    <img src={process.env.PUBLIC_URL +'/images/product_img2.png'}/>
                                     <h4>EOS R5 Mark 2</h4>
                                     <p>5,499,000원</p>
                                 </li>
                                 <li>
-                                    <img src='images/product_img3.png'/>
+                                    <img src={process.env.PUBLIC_URL +'/images/product_img3.png'}/>
                                     <h4>EOS R8 (Body)</h4>
                                     <p>1,799,000원원</p>
                                 </li>
                                 <li>
-                                    <img src='images/product_img4.png'/>
+                                    <img src={process.env.PUBLIC_URL +'/images/product_img4.png'}/>
                                     <h4>EOS R10 (Body)</h4>
                                     <p>1,299,000원</p>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                    <div className="event"> 
+                        </div> 
+                    </div>*/}
+                    {/* <div className="event"> 
                         <h3>EVENT</h3>
                         <div className="event_box">
                             <div className="event_left">
                                 <ul>
                                     <li>
-                                        <img src="/images/Event_img1.png"/>
+                                        <img src={process.env.PUBLIC_URL +"/images/Event_img1.png"}/>
                                         <h4>캐논e스토어</h4>
                                         <p className="middle">PowerShot V10 전용 렌즈캡 증정 이벤트</p>
                                         <p className="small">이벤트 기간 2025-01-03 - 2025-06-30</p>
@@ -96,12 +100,12 @@ function Home(){
                                         <h4>캐논e스토어</h4>
                                         <p className="middle">VR 렌즈 3종 추가 구매 프로모션</p>
                                         <p className="small">이벤트 기간 2024-11-27 - 2025-02-28</p>
-                                        <img src="/images/Event_img2.png"/>
+                                        <img src={process.env.PUBLIC_URL +"/images/Event_img2.png"}/>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             <div className='footer'>
                 <ul className="footer_nav">
@@ -126,15 +130,15 @@ function Home(){
                         </p>
                         <ul className="footer_left_img">
                             <li>
-                                <img src="/images/footer_img1.png"/>
+                                <img src={process.env.PUBLIC_URL +"/images/footer_img1.png"}/>
                                 <p>가족친화 우수기업업</p>
                             </li>
                             <li>
-                                <img src="/images/footer_img2.png"/>
+                                <img src={process.env.PUBLIC_URL +"/images/footer_img2.png"}/>
                                 <p>소비자 중심 경영</p>
                             </li>
                             <li className="footer_left_img_3">
-                                <img src="/images/footer_img3.png"/>
+                                <img src={process.env.PUBLIC_URL +"/images/footer_img3.png"}/>
                                 <p>[인증범위] 캐논코리아 온라인 쇼핑몰 운영 (e스토어, 비즈몰)<br/>
                                    [유효기간] 2024.11.20 ~ 2027.11.19
                                 </p>
@@ -144,11 +148,11 @@ function Home(){
                     <div className="footer_right">
                         <h4>SNS</h4>
                         <ul>
-                            <li><img src="images/instagram.png"/></li>
-                            <li><img src="images/facebook.png"/></li>
-                            <li><img src="images/naver_blog.png"/></li>
-                            <li><img src="images/kakaotalk.png"/></li>
-                            <li><img src="images/kakao_story.png"/></li>
+                            <li><img src={process.env.PUBLIC_URL +"/images/instagram.png"}/></li>
+                            <li><img src={process.env.PUBLIC_URL +"/images/facebook.png"}/></li>
+                            <li><img src={process.env.PUBLIC_URL +"/images/naver_blog.png"}/></li>
+                            <li><img src={process.env.PUBLIC_URL +"/images/kakaotalk.png"}/></li>
+                            <li><img src={process.env.PUBLIC_URL +"/images/kakao_story.png"}/></li>
                         </ul>
                     </div>
                 </div>
