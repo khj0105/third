@@ -2,6 +2,7 @@ import React from 'react';
 import {Route,Link} from 'react-router-dom';
 import { Carousel } from 'react-bootstrap';
 import './App.css';
+import Home from './Home';
 import Store from './component/Store';
 import Recommend from './component/Recommend';
 import Product from './component/Product';
@@ -11,7 +12,7 @@ import Cs from './component/Cs';
 import Search from './component/Search';
 import Mypage from './component/Mypage';
 import Cart from './component/Cart';
-import Home from './Home';
+
  
 function App() {
   return (

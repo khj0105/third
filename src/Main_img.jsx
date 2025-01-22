@@ -28,10 +28,10 @@ function Main_image() {
       <Carousel.Item interval={1000}> 
         <div style={box2}>
         <div className='txt_area1'>
-            <h3>EOS R 시스템 5종 <br/>
+            {/* <h3>EOS R 시스템 5종 <br/>
               공식 가격 인하
             </h3>
-            <p>지금 바로 인하 가격을 확인하세요</p>
+            <p>지금 바로 인하 가격을 확인하세요</p> */}
           </div>
           <img
             className='main_img'
@@ -47,9 +47,9 @@ function Main_image() {
       <Carousel.Item interval={1000}> 
         <div style={box3}>
         <div className='txt_area2'>
-            <h3>윈터페스타 <br/>
-              패키지선물물
-            </h3>
+            {/* <h3>윈터페스타 <br/>
+              패키지선물
+            </h3> */}
           </div>
           <img
             className='main_img'

@@ -1,15 +1,20 @@
 import React from 'react';
-import {Route,Link} from 'react-router-dom'
+import {Route,Link} from 'react-router-dom';
+// import Best_product from './component_content_box/best_product';
+// import Img1 from './component_content_box/img1';
+// import Img2 from './component_content_box/img2';
 
 function Content_box(){
     return(
         <div className='content_box'>
          <div className="img_1">
-                        <img src={process.env.PUBLIC_URL +"/images/nav_img.png"}/>
-                </div>
+            {/* <Link to='./component_content_box/best_product'> */}
+                <img src={process.env.PUBLIC_URL +"/images/nav_img.png"}/>
+            {/* </Link> */}
+         </div>
 
                 <div className="best_product">
-                        <ul className="content_nav">
+                         <ul className="content_nav">{/* 자바스크립트 탭 메뉴 또는 부트스트랩 탭*/}
                             <li className="nav1">
                                 <p>#풀프레임 <br/>
                                 미러리스</p>
@@ -40,7 +45,10 @@ function Content_box(){
                             </li>
                         </ul>
                     </div>
-                    </div>
+                {/* <div>
+                    <Route path="./component_content_box/best_product" component={Best_product}/>
+                </div> */}
+            </div>
     )}
                 
 export default Content_box;
